@@ -47,6 +47,12 @@ brew cask install vagrant
 brew cask install iterm2
 brew cask install google-chrome
 brew cask install 1password
+brew cask install things
+brew cask install keepingyouawake
+brew cask install charles
+brew cask install the-unarchiver
+
+# brew cask install genymotion
 
 # Remove outdated versions from the cellar
 brew cleanup
