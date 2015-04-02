@@ -32,6 +32,11 @@ brew install ack
 brew install pow
 brew install watch
 brew install wget
+brew install xz
+brew install tree
+brew install vim
+brew install packer
+brew install httpie
 
 # Install Cask
 brew install caskroom/cask/brew-cask
@@ -51,6 +56,8 @@ brew cask install things
 brew cask install keepingyouawake
 brew cask install charles
 brew cask install the-unarchiver
+brew cask install flux
+brew cask install noun-project
 
 # brew cask install genymotion
 
