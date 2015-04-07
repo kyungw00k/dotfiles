@@ -57,6 +57,7 @@ brew cask install keepingyouawake
 brew cask install charles
 brew cask install the-unarchiver
 brew cask install flux
+brew cask install noizio
 brew cask install noun-project
 
 # brew cask install genymotion
