@@ -75,11 +75,3 @@ alias gf='git reflog'
 #alias glg1='git lg1'
 #alias glg2='git lg2'
 #alias glg='git lg'
-
-# DaumGate
-alias gate='ssh -t daumgate@daumgate.daumcorp.com'
-
-for hosts in mobilead-web-testvm1 mobilead-web-testvm2 mobilead-api-testvm1 mobilead-api-testvm2 mobilead-queue-testvm mobilead-search-testvm mobilead-batch-testvm1 mobilead-batch-testvm2 mobilead-ci-vm mobilead-cassandra-testvm1 mobilead-cassandra-testvm2 mobilead-cassandra-testvm3
-do
-	alias gate-$hosts="gate hanadmin@${hosts}"
-done

@@ -27,6 +27,10 @@ brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/screen
 
+# Tools for Github
+brew install hub
+brew install gist
+
 # Install other useful binaries
 brew install ack
 brew install pow
@@ -59,6 +63,7 @@ brew cask install the-unarchiver
 brew cask install flux
 brew cask install noizio
 brew cask install noun-project
+brew cask install kitematic
 
 # brew cask install genymotion
 
