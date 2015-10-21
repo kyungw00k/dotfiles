@@ -41,14 +41,12 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(oh-my-zsh-bootstrap rails git textmate ruby lighthouse)
-plugins=(oh-my-zsh-bootstrap zsh-syntax-highlighting brew brew-cask git git-flow git-extras npm gem bower docker gnu-utils colored-man)
+plugins=(oh-my-zsh-bootstrap zsh-syntax-highlighting brew brew-cask git git-flow git-extras gitignore npm gem bower docker gnu-utils colored-man emotty rails ruby hub)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 source ~/.env
-
-export JIRA_URL='http://issue.daumcorp.com'
 
 # Don't keep duplicate entries (same command twice in a row) in history file
 setopt histignoredups
