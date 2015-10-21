@@ -33,7 +33,11 @@ brew install gist
 
 # Install other useful binaries
 brew install ack
+
 brew install pow
+mkdir -p ~/Library/Application\ Support/Pow/Hosts
+ln -s ~/Library/Application\ Support/Pow/Hosts ~/.pow
+
 brew install watch
 brew install wget
 brew install xz
@@ -41,6 +45,10 @@ brew install tree
 brew install vim
 brew install packer
 brew install httpie
+
+# Recording Terminal Session
+# https://asciinema.org/
+brew install asciinema
 
 # Install Cask
 brew install caskroom/cask/brew-cask
@@ -63,7 +71,12 @@ brew cask install the-unarchiver
 brew cask install flux
 brew cask install noizio
 brew cask install noun-project
-brew cask install kitematic
+
+# Image Upload to imgur.com
+brew cask install mac2imgur
+
+# Track time in websites and applications
+brew cask install rescuetime
 
 # brew cask install genymotion
 
