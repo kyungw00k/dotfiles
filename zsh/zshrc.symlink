@@ -84,17 +84,41 @@ source $ZSH/oh-my-zsh.sh
 # The next line enables shell command completion for gcloud.
 #source '/Users/humphrey.park/Library/google-cloud-sdk/completion.zsh.inc'
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export DOTFILES=$HOME/.dotfiles
 
-[ -f ~/.env ] && source ~/.env
+# all of our zsh files
+typeset -U config_files
+config_files=($DOTFILES/**/*.zsh)
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# load the path files
+for file in ${(M)config_files:#*/path.zsh}
+do
+  source $file
+done
 
-export NVM_DIR="/Users/humphrey.park/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# load everything but the path and completion files
+for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
+do
+  source $file
+done
 
-# added by travis gem
-[ -f /Users/humphrey.park/.travis/travis.sh ] && source /Users/humphrey.park/.travis/travis.sh
+# initialize autocomplete here, otherwise functions won't be loaded
+autoload -U compinit
+compinit
 
-# alias for kpm
-alias kpm="npm --registry=http://npm.devel.kakao.com --cache=$HOME/.npm/.cache/kpm --userconfig=$HOME/.kpmrc"
+# load every completion after autocomplete loads
+for file in ${(M)config_files:#*/completion.zsh}
+do
+  source $file
+done
+
+unset config_files
+
+# Better history
+# Credits to https://coderwall.com/p/jpj_6q/zsh-better-history-searching-with-arrow-keys
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey "^[[A" up-line-or-beginning-search # Up
+bindkey "^[[B" down-line-or-beginning-search # Down
