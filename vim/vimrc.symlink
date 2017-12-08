@@ -75,10 +75,12 @@ Plug 'junegunn/limelight.vim'
 Plug 'junegunn/seoul256.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/vim-peekaboo'
+Plug 'pangloss/vim-javascript'
 call plug#end()
 
+
 " Unified color scheme (default: dark)
-colo seoul256
+"colo seoul256
 
 " Goyo.vim integration
 " autocmd! User GoyoEnter Limelight
