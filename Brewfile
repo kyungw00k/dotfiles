@@ -21,8 +21,8 @@ brew "watch"
 brew "wget"
 brew "xz"
 brew "tree"
-brew "gnu-sed", args: ["default-names"]
-brew "vim", args: ["override-system-vi"]
+#brew "gnu-sed", args: ["default-names"]
+#brew "vim", args: ["override-system-vi"]
 brew "packer"
 brew "httpie"
 brew "httpstat"
@@ -31,6 +31,10 @@ brew "gpg-agent"
 brew "gnupg"
 brew "tmux"
 brew "fzf"
+
+brew "git"
+brew "git-lfs"
+brew "fasd"
 
 # Tools for Github
 brew "hub"
@@ -46,7 +50,7 @@ cask "qlmarkdown"
 cask "quicklook-json"
 cask "qlprettypatch"
 cask "quicklook-csv"
-cask "betterzipql"
+#cask "betterzipql"
 cask "qlimagesize" 
 cask "webpquicklook"
 cask "suspicious-package"
@@ -70,15 +74,15 @@ cask "hazel"
 cask "rescuetime"
 
 # Developer Tools
-cask "hyper"
-cask "java" unless system "/usr/libexec/java_home --failfast"
+cask "iterm2"
+#cask "java" unless system "/usr/libexec/java_home --failfast"
 cask "now"
 cask "vagrant"
 cask "visual-studio-code"
 cask "charles"
 cask "livereload"
-cask "webstorm"
-cask "intellij-idea"
+#cask "webstorm"
+#cask "intellij-idea"
 cask "ngrok"
 
 # Browsers
@@ -94,10 +98,10 @@ cask "ripit"
 mas "Moom", id: 419330170
 mas "Image2Icon", id: 992115977
 mas "MindNode", id: 992076693
-mas "Instant Translate", id: 1005088137
-mas "ForkLift", id: 412448059
+#mas "Instant Translate", id: 1005088137
+#mas "ForkLift", id: 412448059
 mas "Movist", id: 461788075
-mas "Irvue", id: 1039633667
+#mas "Irvue", id: 1039633667
 mas "Soulver", id: 413965349
 mas "Slack", id: 803453959
 mas "GIF Brewery 3", id: 1081413713
@@ -108,6 +112,6 @@ mas "Numbers", id: 409203825
 mas "LINE", id: 539883307
 mas "KakaoTalk", id: 869223134
 mas "WinArchiver Lite", id: 414855915
-mas "Twitter", id: 409789998
+#mas "Twitter", id: 409789998
 mas "Movist", id: 461788075
 mas "Xcode", id: 497799835
