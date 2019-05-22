@@ -1,39 +1,26 @@
 [user]
 	name = Kyungwook Park
 	email = parksama@gmail.com
-  signingkey = 1ACC7483
+	signingkey = 1ACC7483
 [color]
 	ui = true
-
 [alias]
 	logfull = log --oneline --graph --decorate --all
 [github]
 	user = kyungw00k
 [core]
 	autocrlf = input
-	excludesfile = /Users/humphrey.park/.gitignore_global
-  editor = `which vim`
-  #pager = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
+	editor = `which vim`
+	precomposeunicode = true
+	quotepath = false
 [filter "media"]
 	required = true
 	clean = git media clean %f
 	smudge = git media smudge %f
 [push]
 	default = simple
-[pager]
-#	log = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight  | less -R
-#	show = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less -R
-#	diff = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less -R
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-[commit]
-	template = /Users/humphrey.park/.stCommitMsg
