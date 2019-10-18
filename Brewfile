@@ -2,7 +2,7 @@ tap "homebrew/bundle"
 tap "caskroom/cask"
 tap "caskroom/fonts"
 
-brew "zsh"
+#brew "zsh"
 brew "zsh-completions"
 brew "git"
 brew "git-flow"
@@ -63,15 +63,15 @@ cask "ProvisionQL"
 # Preview Android APK files
 cask "quicklookapk"
 
-cask "the-unarchiver"
+#cask "the-unarchiver"
 cask "typora"
 cask "alfred"
-cask "vmware-fusion"
+#cask "vmware-fusion"
 cask "1password"
 cask "things"
 cask "keepingyouawake"
 cask "hazel"
-cask "rescuetime"
+#cask "rescuetime"
 
 # Developer Tools
 cask "iterm2"
@@ -81,8 +81,8 @@ cask "vagrant"
 cask "visual-studio-code"
 cask "charles"
 cask "livereload"
-#cask "webstorm"
-#cask "intellij-idea"
+cask "webstorm"
+cask "intellij-idea"
 cask "ngrok"
 
 # Browsers
@@ -93,25 +93,24 @@ cask "firefox"
 cask "caskroom/fonts/font-fira-code"
 
 # Utils
-cask "ripit"
+#cask "ripit"
 
 mas "Moom", id: 419330170
 mas "Image2Icon", id: 992115977
 mas "MindNode", id: 992076693
 #mas "Instant Translate", id: 1005088137
 #mas "ForkLift", id: 412448059
-mas "Movist", id: 461788075
+#mas "Movist", id: 461788075
 #mas "Irvue", id: 1039633667
 mas "Soulver", id: 413965349
 mas "Slack", id: 803453959
 mas "GIF Brewery 3", id: 1081413713
 mas "Sip", id: 507257563
-mas "Keynote", id: 409183694
-mas "Pages", id: 409201541
-mas "Numbers", id: 409203825
+#mas "Keynote", id: 409183694
+#mas "Pages", id: 409201541
+#mas "Numbers", id: 409203825
 mas "LINE", id: 539883307
 mas "KakaoTalk", id: 869223134
-mas "WinArchiver Lite", id: 414855915
-#mas "Twitter", id: 409789998
-mas "Movist", id: 461788075
+#mas "WinArchiver Lite", id: 414855915
+##mas "Twitter", id: 409789998
 mas "Xcode", id: 497799835
